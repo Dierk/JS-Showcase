@@ -1,15 +1,18 @@
-
+/**
+ * @type { String | Number }
+ */
 let myString = "Hello";
 
 console.log(myString);
 
-myString = 0;
+myString = null;
 
 
 
 
 /**
  * Must only log "Hello, world!" or "Hi, world!".
+ * @param { "Hello" | "Hi" } intro
  */
 const helloWorld = intro => console.log(intro + ", world!");
 

@@ -3,23 +3,23 @@
 const ok = [];
 
 // id
-// ok.push( id(id) === id );
-// ok.push( id(1)  ===  1 );
+ok.push( id(id) === id );
+ok.push( id(1)  ===  1 );
 
 // konst
-// ok.push( fst(42)(0) === 42 );
+ok.push( fst(42)(0) === 42 );
 
-// const answer = fst(42);
-// ok.push( answer(1)     === 42 );
-// ok.push( answer(null)  === 42 );
+const answer = fst(42);
+ok.push( answer(1)     === 42 );
+ok.push( answer(null)  === 42 );
 
 // snd
-// ok.push( snd(null)(42) === 42 );
+ok.push( snd(null)(42) === 42 );
 
 
-// const dierk = Pair("Dierk")("König"); // immutable
-// ok.push( dierk(firstname) === "Dierk");
-// ok.push( dierk(lastname)  === "König");
+const dierk = Pair("Dierk")("König"); // immutable
+ok.push( dierk(firstname) === "Dierk");
+ok.push( dierk(lastname)  === "König");
 
 // // tuple
 // const [Person, fn, ln, ag] = Tuple(3);
@@ -30,14 +30,14 @@ const ok = [];
 
 // // either
 
-// const safeDiv = num => divisor =>
-//     divisor === 0
-//     ? Left("schlecht!")
-//     : Right(num / divisor);
+const safeDiv = num => divisor =>
+    divisor === 0
+    ? Left("schlecht!")
+    : Right(num / divisor);
 
-// either (safeDiv(1)(1))
-//       ( x => console.error(x))
-//       ( x => console.log(x));
+safeDiv(1)(1)
+      ( console.error)
+      ( x => console.log(x));
 
 //
 // const [Cash, CreditCard, Invoice, PayPal, pay] = Choice(4);

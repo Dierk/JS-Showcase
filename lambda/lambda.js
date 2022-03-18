@@ -1,6 +1,14 @@
+const id = x => x;
+const fst = x => y => x;
+const snd = x => y => y;
 
+const Pair = x => y => f => f(x)(y);
+const firstname = x => y => x;
+const lastname  = x => y => y;
 
-
+const Left   = x => f => g => f(x);
+const Right  = x => f => g => g(x);
+const either = id ;
 
 
 
